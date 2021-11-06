@@ -11,6 +11,26 @@ const routes: Routes = [
     redirectTo: 'home',
     pathMatch: 'full'
   },
+  {
+    path: 'knowledge',
+    loadChildren: () => import('./pages/knowledge/knowledge.module').then( m => m.KnowledgePageModule)
+  },
+  {
+    path: 'settings',
+    loadChildren: () => import('./pages/settings/settings.module').then( m => m.SettingsPageModule)
+  },
+  {
+    path: 'analysis',
+    loadChildren: () => import('./pages/analysis/analysis.module').then( m => m.AnalysisPageModule)
+  },
+  {
+    path: 'checklist',
+    loadChildren: () => import('./pages/checklist/checklist.module').then( m => m.ChecklistPageModule)
+  },
+  {
+    path: 'support',
+    loadChildren: () => import('./pages/support/support.module').then( m => m.SupportPageModule)
+  },
 ];
 
 @NgModule({

@@ -1,3 +1,54 @@
 <ion-app>
-  <ion-router-outlet></ion-router-outlet>
+  <ion-menu menuId="main-menu" content-id="main">
+    <ion-header>
+      <ion-toolbar>
+        <ion-title>
+          SMART
+          <br/>
+          Menu
+        </ion-title>
+      </ion-toolbar>
+    </ion-header>
+    <ion-content>
+      <ion-list>
+        <ion-menu-toggle>
+          <ion-item routerLink="/home">
+          <ion-icon name="home" slot="start"></ion-icon>
+          <ion-label>Home</ion-label>
+          </ion-item>
+        </ion-menu-toggle>
+        <ion-menu-toggle>
+          <ion-item routerLink="knowledge">
+          <ion-icon name="book" slot="start"></ion-icon>
+          <ion-label>Knowledge</ion-label>
+          </ion-item>
+        </ion-menu-toggle>
+        <ion-menu-toggle>
+          <ion-item routerLink="analysis">
+          <ion-icon name="search" slot="start"></ion-icon>
+          <ion-label>Analysis</ion-label>
+          </ion-item>
+        </ion-menu-toggle>
+        <ion-menu-toggle>
+          <ion-item routerLink="checklist">
+          <ion-icon name="list" slot="start"></ion-icon>
+          <ion-label>Checklist</ion-label>
+          </ion-item>
+        </ion-menu-toggle>
+        <ion-menu-toggle>
+          <ion-item routerLink="support">
+          <ion-icon name="call" slot="start"></ion-icon>
+          <ion-label>Support</ion-label>
+          </ion-item>
+        </ion-menu-toggle>
+        <ion-menu-toggle>
+          <ion-item routerLink="settings">
+          <ion-icon name="settings" slot="start"></ion-icon>
+          <ion-label>Settings</ion-label>
+          </ion-item>
+        </ion-menu-toggle>
+      </ion-list>
+    </ion-content>
+  </ion-menu>
+  <ion-router-outlet id="main"></ion-router-outlet>
 </ion-app>
