@@ -1,10 +1,32 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title class="title">
-      Settings
-    </ion-title>
-    <ion-buttons slot="start">
-      <ion-menu-button menu="main-menu"></ion-menu-button>
-    </ion-buttons>
-  </ion-toolbar>
-</ion-header>
+<ion-content style="background-color: white;">
+<ion-toolbar>
+  <ion-title class="title">Settings</ion-title>
+  <ion-buttons slot="start">
+    <ion-menu-button menu="main-menu"></ion-menu-button>
+  </ion-buttons>
+</ion-toolbar>
+
+<ion-content>
+  <div class="center">
+    <img src="assets/images/settings.png" />
+  </div>
+
+  <ion-list lines="none">
+    <ion-item>
+      <ion-card style="width: 100%; padding-top: 1em; padding-bottom: 1em;">
+        <ion-item>
+          <ion-avatar slot="start">
+            <img src="assets/images/settings1.png" />
+          </ion-avatar>
+          <ion-label>
+            <h3 class="item-label">Language</h3>
+          </ion-label>
+          <ion-toggle color="primary"></ion-toggle>
+        </ion-item>
+      </ion-card>
+    </ion-item>
+
+    
+  </ion-list>
+</ion-content>
+</ion-content>

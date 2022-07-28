@@ -1,0 +1,31 @@
+<ion-content style="background-color: white;">
+<ion-toolbar>
+  <ion-title class="title">Video</ion-title>
+  <ion-buttons slot="start">
+    <ion-menu-button menu="main-menu"></ion-menu-button>
+  </ion-buttons>
+</ion-toolbar>
+
+<div class="center">
+    <img src="assets/images/videoImg.jpg" style="max-width: 50vw;"/>
+  </div>
+
+<ion-content>
+
+<ion-list lines="none">
+ <ion-item *ngFor="let item of list">
+      <ion-card style="width: 100%; padding-top: 1em; padding-bottom: 1em;" href="{{item.url}}">
+        <ion-item>
+          <ion-avatar slot="start">
+            <img src="{{item.thumbnail}}" />
+          </ion-avatar>
+          <ion-label>
+            <h3 class="item-label">{{item.title}}</h3>
+          </ion-label>
+        </ion-item>
+      </ion-card>
+    </ion-item>
+</ion-list>
+
+</ion-content>
+</ion-content>

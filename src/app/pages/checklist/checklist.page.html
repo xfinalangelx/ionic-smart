@@ -1,10 +1,93 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title class="title">
-      Checklist
-    </ion-title>
-    <ion-buttons slot="start">
-      <ion-menu-button menu="main-menu"></ion-menu-button>
-    </ion-buttons>
-  </ion-toolbar>
-</ion-header>
+<ion-content style="background-color: white;">
+<ion-toolbar>
+  <ion-title class="title"> Checklist </ion-title>
+  <ion-buttons slot="start">
+    <ion-menu-button menu="main-menu"></ion-menu-button>
+  </ion-buttons>
+</ion-toolbar>
+
+<div class="center">
+    <img src="assets/images/checklistImg.png" />
+  </div>
+<ion-content [scrollEvents]="true">
+
+  <ion-list lines="none" class="ion-no-padding">
+    <ion-item class="ion-no-padding">
+      <ion-card style="width: 100%; padding-top: 1em; padding-bottom: 1em">
+        <ion-item>
+          <ion-avatar slot="start">
+            <img src="assets/images/check1.png" />
+          </ion-avatar>
+          <ion-label>
+            <h3 class="item-label">All Checklist</h3>
+          </ion-label>
+        </ion-item>
+      </ion-card>
+    </ion-item>
+
+    <ion-item class="ion-no-padding">
+      <ion-card style="width: 100%; padding-top: 1em; padding-bottom: 1em">
+        <ion-item>
+          <ion-avatar slot="start">
+            <img src="assets/images/check2.png" />
+          </ion-avatar>
+          <ion-label>
+            <h3 class="item-label">Vaccination</h3>
+          </ion-label>
+        </ion-item>
+      </ion-card>
+    </ion-item>
+
+    <ion-item class="ion-no-padding">
+      <ion-card style="width: 100%; padding-top: 1em; padding-bottom: 1em">
+        <ion-item>
+          <ion-avatar slot="start">
+            <img src="assets/images/check3.png" />
+          </ion-avatar>
+          <ion-label>
+            <h3 class="item-label">Blood Test</h3>
+          </ion-label>
+        </ion-item>
+      </ion-card>
+    </ion-item>
+
+    <ion-item class="ion-no-padding">
+      <ion-card style="width: 100%; padding-top: 1em; padding-bottom: 1em">
+        <ion-item>
+          <ion-avatar slot="start">
+            <img src="assets/images/check4.png" />
+          </ion-avatar>
+          <ion-label>
+            <h3 class="item-label">Appointment</h3>
+          </ion-label>
+        </ion-item>
+      </ion-card>
+    </ion-item>
+
+    <ion-item class="ion-no-padding">
+      <ion-card style="width: 100%; padding-top: 1em; padding-bottom: 1em">
+        <ion-item>
+          <ion-avatar slot="start">
+            <img src="assets/images/check5.png" />
+          </ion-avatar>
+          <ion-label>
+            <h3 class="item-label">Journal</h3>
+          </ion-label>
+        </ion-item>
+      </ion-card>
+    </ion-item>
+
+    <ion-item class="ion-no-padding">
+      <ion-card style="width: 100%; padding-top: 1em; padding-bottom: 1em">
+        <ion-item>
+          <ion-avatar slot="start">
+            <img src="assets/images/check6.png" />
+          </ion-avatar>
+          <ion-label>
+            <h3 class="item-label">Medication Record</h3>
+          </ion-label>
+        </ion-item>
+      </ion-card>
+    </ion-item>
+  </ion-list>
+  </ion-content>
